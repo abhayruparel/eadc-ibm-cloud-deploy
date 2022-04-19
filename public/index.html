@@ -1,26 +1,31 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-    <title>NodeJS Starter Application</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheets/style.css">
-  </head>
-
-  <body>
-    <table>
-      <tr>
-        <td style= "width:30%;">
-          <img class = "newappIcon" src="images/newapp-icon.png">
-        </td>
-        <td>
-          <h1 id="message">Hello World!</h1>
-          <p class='description'></p> Thanks for creating a <span class = "blue">NodeJS Starter Application</span>.
-        </td>
-      </tr>
-    </table>
-  </body>
-
+<!doctype html>
+<html><head>
+		<meta charset="utf-8">
+		<title>Chord - Home</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/projectMain.css">
+		<link rel="icon" href="assets/images/ChordNewVector.png">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=.68">
+		<style>
+			ul{
+				margin: 10px;
+			}
+        </style>
+	</head>
+	<body bgcolor="#2222222" onload="addOverlay()" style="margin: 0px;">
+		<div class="homeScreen">
+			<ul>
+				<li><a class="active" href="index.html">Home</a></li>
+				<li><a href="projectPopular.html">Popular</a></li>
+				<li><a href="projectGenres.html">Genres</a></li>
+				<li><a href="projectSignUp.html">Sign Up</a></li>
+				<li><a href="projectSignIn.html">Sign In</a></li>
+				<li style="float: right;"><a href="aboutUs.html">About Us</a></li>
+		  	</ul>
+		  	<center><img src="assets/images/ChordNewVector.png" alt="Logo" class="mainLogo"></center>
+		  	<span class="homeName">CHORD</span>
+			<span class="homeTag">Your one stop music<br>streaming service</span>
+			<button class="gotoPopular"><a href="projectPopular.html">Ready to groove</a></button>
+		</div>
+	</body>
 </html>
