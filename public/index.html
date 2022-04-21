@@ -1,31 +1,57 @@
-<!doctype html>
-<html><head>
-		<meta charset="utf-8">
-		<title>Chord - Home</title>
-		<link rel="stylesheet" type="text/css" href="assets/css/projectMain.css">
-		<link rel="icon" href="assets/images/ChordNewVector.png">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=.68">
-		<style>
-			ul{
-				margin: 10px;
-			}
-        </style>
-	</head>
-	<body bgcolor="#2222222" onload="addOverlay()" style="margin: 0px;">
-		<div class="homeScreen">
-			<ul>
-				<li><a class="active" href="index.html">Home</a></li>
-				<li><a href="projectPopular.html">Popular</a></li>
-				<li><a href="projectGenres.html">Genres</a></li>
-				<li><a href="projectSignUp.html">Sign Up</a></li>
-				<li><a href="projectSignIn.html">Sign In</a></li>
-				<li style="float: right;"><a href="aboutUs.html">About Us</a></li>
-		  	</ul>
-		  	<center><img src="assets/images/ChordNewVector.png" alt="Logo" class="mainLogo"></center>
-		  	<span class="homeName">CHORD</span>
-			<span class="homeTag">Your one stop music<br>streaming service</span>
-			<button class="gotoPopular"><a href="projectPopular.html">Ready to groove</a></button>
-		</div>
-	</body>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Chord - Home</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/projectMain.css" />
+    <link rel="icon" href="assets/images/ChordNewVector.png" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=.68" />
+    <style>
+        ul {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body bgcolor="#2222222" onload="addOverlay()" style="margin: 0px">
+    <div class="homeScreen">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="projectPopular.html">Popular</a></li>
+            <li><a href="projectGenres.html">Genres</a></li>
+            <li><a href="projectSignUp.html">Sign Up</a></li>
+            <li><a href="projectSignIn.html">Sign In</a></li>
+            <li style="float: right"><a href="aboutUs.html">About Us</a></li>
+        </ul>
+        <center>
+            <img src="assets/images/ChordNewVector.png" alt="Logo" class="mainLogo" />
+        </center>
+        <span class="homeName">CHORD</span>
+        <span class="homeTag">Your one stop music<br />streaming service</span>
+        <button class="gotoPopular">
+        <a href="projectPopular.html">Ready to groove</a>
+      </button>
+    </div>
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "78185d3a-6109-4ce6-9235-ad8257227611", // The ID of this integration.
+            region: "eu-gb", // The region your integration is hosted in.
+            serviceInstanceID: "5339d247-1d8b-4f8c-a335-8d45ef55a8d7", // The ID of your service instance.
+            onLoad: function(instance) {
+                instance.render();
+            },
+        };
+        setTimeout(function() {
+            const t = document.createElement("script");
+            t.src =
+                "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+                (window.watsonAssistantChatOptions.clientVersion || "latest") +
+                "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+</body>
+
 </html>
